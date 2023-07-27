@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Forms</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <label for="Nome"> Nome: </label>
+        <input id="Nome" type="text" placeholder="Seu nome"/>
+        <br />
+        <label for="email"> Seu e-mail:</label>
+        <input id="email" type="email" placeholder="Seu e-mail" />
+        <br />
+        <label for="telefone" > Telefone:</label>
+        <input id="telefone" type="tel" placeholder="Seu telefone" />
+        <br />
+        <label> Quantos dias da viagem: </label>
+        <input type="number" max="10" min="1" step="1" />
+        <h6>Dias sequênciais, apenas.</h6>
+        <br />
+        <label>Carregar documentos:</label>
+        <br />
+        <input type="file" /> <br />
+        <label>Escolha cor de fundo:</label>
+        <input type="color" /> 
+        <br />
+        <p>
+            Qual a seu horário favorito?
+        </p>
+        <input type="radio" name="hor_favorito" id="bot-manha" /> <label for="bot-manha"> Manhã</label>
+        <input type="radio" name="hor_favorito" id="bot-tarde" /> <label for="bot-tarde"> Tarde</label>
+        <input type="radio" name="hor_favorito" id="bot-noite" /> <label for="bot-noite"> Noite</label>
+        <br />
+        <br />
+        <label>Qual seu dia da semana favorito?</label>
+        <select multiple> 
+            <option>Domingo</option>
+            <option>Segunda-feira</option>
+            <option>Terça-feira</option>
+            <option>Quarta-feira</option>
+            <option>Quinta-feira</option>
+            <option>Sexta-feira</option>
+            <option>Sábado</option>
+        </select>
+        <br />
+        <br />
+        <label>Comentários</label><br />
+        <textarea></textarea>
+        <br />
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+        <br />
+        <label for=""><b> Aceita os termos: </b></label>
+        <input type="checkbox" id="checkbox-termos1" /> 
+        <label for="checkbox-termos1"> Aceito. </label>
+        <input type="checkbox" id="checkbox-termos2" />
+        <label for="checkbox-termos2"> Não aceito. </label>
+            
+    </form>
+</body>
+</html>
